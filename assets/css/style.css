@@ -489,6 +489,48 @@ html {
     margin: 10px auto;
   }
 }
+@media only screen and (max-width: 414px) {
+  .lightbox_footer-right {
+    width: 100%;
+    padding-right: 0;
+  }
+  .lightbox_recent {
+    margin-top: 70px;
+  }
+  .lightbox_plan {
+    display: block;
+  }
+  .lightbox-name1 {
+    margin-left: 225px;
+  }
+  .lightbox-content {
+    display: inline;
+  }
+  .lightbox-name {
+    margin-left: 163px;
+    margin-top: -160px;
+  }
+  .lightbox-nameRight {
+    margin-left: 81px;
+    width: 75%;
+    margin-top: 5px;
+  }
+  .lightbox-logo {
+    width: 118px;
+    margin-top: 0;
+    margin-left: 10px;
+  }
+  .lightbox-item {
+    margin-top: 0;
+    margin-left: 40px;
+  }
+  .lightbox_navbar {
+    margin: 10px 10px;
+  }
+  .arrow {
+    display: none;
+  }
+}
 body {
   font-family: "Montserrat", sans-serif;
   max-width: 1920px;

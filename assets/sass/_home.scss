@@ -376,3 +376,53 @@ html {
     }
   }
 }
+@media only screen and (max-width: 414px) {
+  .lightbox {
+    &_footer {
+      &-right {
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+    &_recent {
+      margin-top: 70px;
+    }
+    &_plan {
+      display: block;
+    }
+    &-name1 {
+      margin-left: 225px;
+    }
+    &-content {
+      display: inline;
+    }
+    &-name {
+      margin-left: 163px;
+      margin-top: -160px;
+    }
+    &-nameRight {
+      margin-left: 81px;
+      width: 75%;
+      margin-top: 5px;
+    }
+    &-logo {
+      width: 118px;
+      margin-top: 0;
+      margin-left: 10px;
+    }
+    &-item {
+      margin-top: 0;
+      margin-left: 40px;
+    }
+    &_navbar {
+      margin: 10px 10px;
+    }
+    &_header {
+      &-top {
+      }
+    }
+  }
+  .arrow {
+    display: none;
+  }
+}
