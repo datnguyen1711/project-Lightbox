@@ -124,8 +124,6 @@ html {
         font-family: georgia;
       }
     }
-    &-desc {
-    }
     &-author {
       font: bold normal 15px arial;
       color: #2f231e;
@@ -241,6 +239,7 @@ html {
       height: 30px;
       background-color: $brown;
       padding: 35px;
+      padding-right: 80px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -248,7 +247,7 @@ html {
     p {
       color: #a68a7d;
       text-transform: uppercase;
-      font-size: 13px;
+      font-size: 11px;
       span {
         color: #fff;
       }
@@ -327,5 +326,53 @@ html {
   }
   .arrow {
     transform: translateX(500%);
+  }
+}
+@media only screen and (max-width: 376px) {
+  .lightbox {
+    &_footer {
+      &-right {
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+    &_recent {
+      margin-top: 70px;
+    }
+    &_plan {
+      display: block;
+    }
+    &-name1 {
+      margin-left: 225px;
+    }
+    &-content {
+      display: inline;
+    }
+    &-name {
+      margin-left: 163px;
+      margin-top: -160px;
+    }
+    &-nameRight {
+      margin-left: 81px;
+      width: 75%;
+      margin-top: 5px;
+    }
+    &-logo {
+      width: 118px;
+      margin-top: 0;
+      margin-left: 10px;
+    }
+    &-item {
+      margin-top: 0;
+      margin-left: 40px;
+    }
+    &_navbar {
+      width: auto;
+      margin: 10px auto;
+    }
+    &_header {
+      &-top {
+      }
+    }
   }
 }
