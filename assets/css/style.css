@@ -107,7 +107,8 @@ section {
 }
 
 body {
-  line-height: 1;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 25px;
 }
 
 ol,
@@ -133,12 +134,15 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   max-width: 1920px;
   line-height: 1;
   margin: 0 auto;
-  min-height: 100vh;
 }
 
 html {
@@ -147,11 +151,11 @@ html {
 
 .lightbox_header {
   width: 100%;
-  height: 265px;
+  height: 266px;
 }
 .lightbox_header-main {
-  width: 71%;
-  height: 214px;
+  width: 71.45%;
+  height: 213px;
   margin: 0 auto;
   background-color: #30241f;
   border-left: 1px solid #5e463c;
@@ -166,6 +170,13 @@ html {
   background-color: #3b2c25;
   border-top: 1px solid #4a362e;
 }
+.lightbox-bubble {
+  top: 0;
+  right: 50;
+  transform: translateX(-42%);
+  position: absolute;
+  z-index: 1;
+}
 .lightbox-logo {
   margin-top: -145px;
   margin-left: -40px;
@@ -178,48 +189,58 @@ html {
   display: flex;
   text-decoration: none;
   float: right;
-  margin-right: 70px;
+  margin-right: 102px;
 }
 .lightbox-item {
-  margin-top: 28px;
+  margin-top: 32px;
   margin-left: 87px;
   text-align: center;
 }
 .lightbox-item_image {
-  width: 37px;
-  margin-bottom: 16px;
+  width: 33px;
+  margin-bottom: 12px;
+  z-index: 2;
 }
 .lightbox-item p {
-  color: #c7b18d;
   font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #c7b18d;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
 }
 .lightbox-name {
   margin-left: 170px;
-  margin-top: -160px;
+  margin-top: -177px;
   color: #ede8e4;
-  font-size: 55px;
+  font-size: 60px;
+  font-weight: 900;
+  display: block;
+  width: 124px;
+  height: 67px;
   font-family: "Duepuntozero";
 }
 .lightbox-name1 {
-  margin-left: 236px;
+  margin-left: 238px;
   color: #c7b18d;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
+  margin-top: -10px;
+  font-family: "Duepuntozero";
 }
 .lightbox-content {
   display: flex;
   height: 93px;
 }
-.lightbox-nameRight {
-  margin-left: 10px;
-  width: 45%;
-  margin-top: -160px;
-}
 .lightbox-paragraph {
-  border-left: 2px solid #4a362e;
+  margin: -67px 235px 0 302px;
   padding-left: 20px;
-  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 17px;
   color: #a68a7d;
+  border-left: 1px solid #4f3b33;
   line-height: 1.3;
 }
 .lightbox_main {
@@ -228,7 +249,7 @@ html {
   margin-bottom: 100px;
 }
 .lightbox_container {
-  width: 71%;
+  width: 71.45%;
   margin: 0 auto;
   background-image: linear-gradient(#e6e2df, white);
   height: 100%;
@@ -236,24 +257,36 @@ html {
   border-right: 1px solid white;
 }
 .lightbox_info {
-  width: 63.9%;
+  width: 65.9%;
   height: 100%;
   margin-left: auto;
-  padding-top: 15px;
+  padding-top: 30px;
   padding-right: 15px;
 }
 .lightbox_plan {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px solid #cec5c0;
+  border-bottom: 1px solid #cec5c0;
 }
 .lightbox_plan-quote {
-  margin-left: 20px;
-  width: 75%;
+  float: right;
+  margin-right: 10px;
+  margin-left: 60px;
+  width: 70%;
   background: #e6e2df;
   color: #7f6357;
   padding: 25px;
   font: italic 18px/27px georgia;
+  position: relative;
+}
+.lightbox_plan-quote ::before {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  right: 35px;
+  border-top: 25px solid #e3e3e3;
+  border-left: 30px solid #f1efed;
+  border-right: 5px solid #f1efed;
 }
 .lightbox_plan-quote p {
   font-size: 20px;
@@ -265,7 +298,7 @@ html {
   font: bold normal 15px arial;
   color: #2f231e;
   float: right;
-  padding-right: 30px;
+  margin-right: 10px;
   padding-top: 35px;
   font-weight: bold;
 }
@@ -277,36 +310,39 @@ html {
 }
 .lightbox-title {
   font-weight: 600;
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-size: 35px;
+  margin-bottom: 25px;
+  font-family: "Duepuntozero";
   color: #2f231e;
 }
 .lightbox-information {
-  border-top: 2px solid #cfc6c0;
-  padding-top: 20px;
+  border-top: 1px solid #cfc6c0;
+  padding-top: 30px;
   padding-right: 20px;
 }
 .lightbox-list {
   display: flex;
 }
 .lightbox-list img {
-  height: 27px;
+  height: 40px;
   margin-right: 15px;
 }
 .lightbox-list_item {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .lightbox-list_item h2 {
   color: #836065;
-  font-weight: 300;
-  font-size: 25px;
-  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 8px;
   font-family: "Duepuntozero";
 }
 .lightbox-list_item p {
-  font-size: 15px;
+  width: 300px;
+  font-size: 14px;
   color: #645a56;
   line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .lightbox_recent p > strong {
   color: #000;
@@ -318,6 +354,7 @@ html {
   font-style: italic;
   color: #4e4d4d;
   margin-top: 15px;
+  margin-right: 10px;
 }
 .lightbox_recent-main {
   display: flex;
@@ -328,22 +365,25 @@ html {
 }
 .lightbox_recent-title {
   margin-bottom: 0;
-  font-size: 30px;
+  font-size: 37px;
   color: #2f231e;
   font-weight: 600;
+  font-family: "Duepuntozero";
 }
 .lightbox_recent-number {
   display: flex;
   gap: 8px;
+  margin-right: 10px;
 }
 .lightbox_recent-image {
-  width: calc(100% - 20px);
-  padding: 11px;
+  width: 92%;
+  padding: 20px;
   border: 1px solid #d6cec9;
   background: white;
+  margin-right: 100px;
 }
 .lightbox_recent-image img {
-  width: calc(100% - 10px);
+  width: 100%;
   display: block;
   margin: 0 auto;
   border: 1px solid #cecece;
@@ -355,13 +395,13 @@ html {
   border-left: 1px solid #48362d;
 }
 .lightbox_footer-main {
-  width: 80%;
+  width: 71.45%;
   height: 100%;
   margin: 0 auto;
   display: flex;
 }
 .lightbox_footer-left {
-  width: calc(100% - 500px);
+  width: calc(100% - 530px);
   height: 100%;
   background-color: #251b17;
   display: flex;
@@ -387,18 +427,11 @@ html {
   color: #fff;
 }
 
-.arrow {
-  width: 0;
-  height: 0;
-  line-height: 0;
-  border-top: 25px solid #e3e3e3;
-  border-left: 30px solid #f1efed;
-  border-right: 5px solid #f1efed;
-  position: absolute;
-  transform: translateX(500%);
-}
-
 @media only screen and (max-width: 1024px) {
+  .arrow {
+    display: none;
+  }
+
   .lightbox_container {
     width: calc(100% - 2px);
   }
@@ -416,7 +449,6 @@ html {
   }
   .lightbox_plan-desc {
     width: 100%;
-    margin-right: 30px;
   }
   .lightbox_main {
     width: 100%;
@@ -428,11 +460,17 @@ html {
     margin-left: 0;
   }
   .lightbox-logo {
-    width: 270px;
-    margin-top: -180px;
+    display: none;
+  }
+  .lightbox-nameLeft {
+    width: 100%;
   }
   .lightbox-name {
-    margin-top: -150px;
+    margin-top: 97px;
+  }
+  .lightbox-paragraph {
+    width: 300px;
+    margin: -81px 292px 0 304px;
   }
   .lightbox_container {
     width: calc(100% - 2px);
@@ -449,47 +487,18 @@ html {
     transform: translateX(500%);
   }
 }
-@media only screen and (max-width: 376px) {
-  .lightbox_footer-right {
-    width: 100%;
-    padding-right: 0;
-  }
-  .lightbox_recent {
-    margin-top: 70px;
-  }
-  .lightbox_plan {
-    display: block;
-  }
-  .lightbox-name1 {
-    margin-left: 225px;
-  }
-  .lightbox-content {
-    display: inline;
-  }
-  .lightbox-name {
-    margin-left: 163px;
-    margin-top: -160px;
-  }
-  .lightbox-nameRight {
-    margin-left: 81px;
-    width: 75%;
-    margin-top: 5px;
-  }
+@media only screen and (max-width: 375px) {
   .lightbox-logo {
-    width: 118px;
-    margin-top: 0;
-    margin-left: 10px;
+    display: none;
   }
-  .lightbox-item {
-    margin-top: 0;
-    margin-left: 40px;
-  }
-  .lightbox_navbar {
-    width: auto;
-    margin: 10px auto;
+  .lightbox_header-main {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 414px) {
+  .lightbox_footer img {
+    display: none;
+  }
   .lightbox_footer-right {
     width: 100%;
     padding-right: 0;
@@ -497,18 +506,34 @@ html {
   .lightbox_recent {
     margin-top: 70px;
   }
+  .lightbox_recent-image {
+    width: 85%;
+  }
   .lightbox_plan {
     display: block;
+    border-bottom: none;
   }
   .lightbox-name1 {
-    margin-left: 225px;
+    margin-left: 91px;
   }
   .lightbox-content {
     display: inline;
   }
+  .lightbox-item {
+    margin-left: 47px;
+  }
+  .lightbox-paragraph {
+    padding: 0;
+    border: none;
+    width: 200px;
+    font-size: 15px;
+    margin: -81px 292px 0 162px;
+  }
+  .lightbox_plan-desc {
+    height: 400px;
+  }
   .lightbox-name {
-    margin-left: 163px;
-    margin-top: -160px;
+    margin-left: 26px;
   }
   .lightbox-nameRight {
     margin-left: 81px;
@@ -516,19 +541,89 @@ html {
     margin-top: 5px;
   }
   .lightbox-logo {
-    width: 118px;
-    margin-top: 0;
-    margin-left: 10px;
-  }
-  .lightbox-item {
-    margin-top: 0;
-    margin-left: 40px;
+    display: none;
   }
   .lightbox_navbar {
-    margin: 10px 10px;
+    margin: 10px auto;
   }
+  .lightbox-list_item p {
+    width: 265px;
+  }
+
   .arrow {
     display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .lightbox_footer img {
+    display: none;
+  }
+  .lightbox_footer-right {
+    width: 100%;
+    padding-right: 0;
+  }
+  .lightbox_recent {
+    margin-top: 123px;
+  }
+  .lightbox_recent-title {
+    margin-bottom: 10px;
+  }
+  .lightbox_recent-main {
+    display: inline-block;
+  }
+  .lightbox_recent-image {
+    width: 85%;
+  }
+  .lightbox_plan {
+    display: block;
+    border-bottom: none;
+  }
+  .lightbox-name1 {
+    margin-left: 91px;
+  }
+  .lightbox-content {
+    display: inline;
+  }
+  .lightbox-item {
+    margin-left: 33px;
+  }
+  .lightbox-paragraph {
+    width: 256px;
+    font-size: 15px;
+    margin: 18px 286px 0 33px;
+    text-align: center;
+  }
+  .lightbox_plan-desc {
+    height: 400px;
+  }
+  .lightbox-name {
+    margin-left: 112px;
+    margin-bottom: 94px;
+  }
+  .lightbox-name1 {
+    margin-left: 180px;
+    margin-top: -103px;
+  }
+  .lightbox-nameRight {
+    margin-left: 81px;
+    width: 75%;
+    margin-top: 5px;
+  }
+  .lightbox-logo {
+    display: none;
+  }
+  .lightbox_navbar {
+    margin: 10px auto;
+  }
+  .lightbox-list_item p {
+    width: 200px;
+  }
+  .lightbox_header {
+    height: 336px;
+  }
+  .lightbox_header-main {
+    width: auto;
+    height: 500px;
   }
 }
 body {
@@ -536,7 +631,6 @@ body {
   max-width: 1920px;
   line-height: 1;
   margin: 0 auto;
-  min-height: 100vh;
 }
 
 html {
@@ -576,20 +670,25 @@ html {
   display: flex;
   text-decoration: none;
   float: right;
-  margin-right: 80px;
+  margin-right: 102px;
 }
 .contact-item {
-  margin-top: 28px;
+  margin-top: 32px;
   margin-left: 87px;
   text-align: center;
 }
 .contact-item_image {
-  width: 37px;
-  margin-bottom: 16px;
+  width: 33px;
+  margin-bottom: 12px;
 }
 .contact-item p {
-  color: #c7b18d;
   font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #c7b18d;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
 }
 .contact-name {
   margin-left: 170px;
@@ -627,9 +726,10 @@ html {
   padding-right: 30px;
 }
 .contact_info-title {
-  font-size: 30px;
+  font-size: 37px;
   padding-bottom: 17px;
   border-bottom: 2px solid #cfcfcf;
+  font-family: "Duepuntozero";
 }
 .contact_info-detail {
   font-size: 13px;
@@ -669,7 +769,7 @@ html {
   display: flex;
 }
 .contact_footer-left {
-  width: calc(100% - 500px);
+  width: calc(100% - 550px);
   background-color: #251b17;
   display: flex;
   justify-content: center;
@@ -714,12 +814,16 @@ html {
   height: 33px;
   background-color: #cdc4be;
   float: right;
-  transform: translateX(-110%);
+  margin-right: 121px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1024px) {
   .contact_container {
     width: calc(100% - 2px);
+  }
+  .contact_navbar {
+    margin-right: 0;
   }
   .contact_footer-main {
     width: 100%;
@@ -743,21 +847,27 @@ html {
   .contact_info {
     width: auto;
     padding-top: 50px;
-    padding-left: 30px;
+    padding-left: 70px;
     margin-left: 0;
   }
   .contact-logo {
-    width: 270px;
-    margin-top: -180px;
+    display: none;
   }
   .contact-name {
-    margin-top: -150px;
+    margin-top: -24px;
+    margin-left: 61px;
+  }
+  .contact-name1 {
+    margin-left: 123px;
   }
   .contact_container {
     width: calc(100% - 2px);
   }
   .contact_footer-main {
     width: 100%;
+  }
+  .contact button {
+    margin-right: 125px;
   }
   .contact_header-main {
     width: calc(100% - 1px);
@@ -766,6 +876,46 @@ html {
 
   .arrow {
     transform: translateX(500%);
+  }
+}
+@media only screen and (max-width: 414px) {
+  .contact_header {
+    height: 173px;
+  }
+  .contact_header-bot {
+    height: 100%;
+  }
+  .contact_header-main {
+    height: 100%;
+  }
+  .contact-name {
+    margin-top: 47px;
+    margin-left: 131px;
+  }
+  .contact-name1 {
+    margin-left: 191px;
+    margin-top: -5px;
+  }
+  .contact-item {
+    margin-left: 47px;
+  }
+  .contact_info {
+    padding-top: 20px;
+    padding-left: 30px;
+  }
+  .contact_info-author ul li {
+    width: auto;
+    margin-bottom: 17px;
+  }
+  .contact_form input,
+.contact_form textarea {
+    width: 100%;
+  }
+  .contact_footer img {
+    display: none;
+  }
+  .contact button {
+    margin-right: 100px;
   }
 }
 

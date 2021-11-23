@@ -3,7 +3,6 @@ body {
   max-width: 1920px;
   line-height: 1;
   margin: 0 auto;
-  min-height: 100vh;
 }
 html {
   scroll-behavior: smooth;
@@ -42,19 +41,24 @@ html {
     display: flex;
     text-decoration: none;
     float: right;
-    margin-right: 80px;
+    margin-right: 102px;
   }
   &-item {
-    margin-top: 28px;
+    margin-top: 32px;
     margin-left: 87px;
     text-align: center;
     &_image {
-      width: 37px;
-      margin-bottom: 16px;
+      width: 33px;
+      margin-bottom: 12px;
     }
     p {
-      color: #c7b18d;
       font-size: 11px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      color: #c7b18d;
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
     }
   }
   &-name {
@@ -93,9 +97,10 @@ html {
     padding-top: 30px;
     padding-right: 30px;
     &-title {
-      font-size: 30px;
+      font-size: 37px;
       padding-bottom: 17px;
       border-bottom: 2px solid #cfcfcf;
+      font-family: "Duepuntozero";
     }
     &-detail {
       font-size: 13px;
@@ -139,7 +144,7 @@ html {
       display: flex;
     }
     &-left {
-      width: calc(100% - 500px);
+      width: calc(100% - 550px);
       background-color: $bold-brown;
       display: flex;
       justify-content: center;
@@ -184,7 +189,8 @@ html {
       height: 33px;
       background-color: #cdc4be;
       float: right;
-      transform: translateX(-110%);
+      margin-right: 121px;
+      cursor: pointer;
     }
   }
 }
@@ -193,6 +199,9 @@ html {
   .contact {
     &_container {
       width: calc(100% - 2px);
+    }
+    &_navbar {
+      margin-right: 0;
     }
     &_footer-main {
       width: 100%;
@@ -217,30 +226,31 @@ html {
     &_main {
       width: 100%;
     }
-    &_plan {
-      &-author {
-      }
-    }
     &_info {
       width: auto;
       padding-top: 50px;
-      padding-left: 30px;
+      padding-left: 70px;
       margin-left: 0;
     }
+
     &-logo {
-      width: 270px;
-      margin-top: -180px;
+      display: none;
     }
     &-name {
-      margin-top: -150px;
+      margin-top: -24px;
+      margin-left: 61px;
     }
-    &-paragraph {
+    &-name1 {
+      margin-left: 123px;
     }
     &_container {
       width: calc(100% - 2px);
     }
     &_footer-main {
       width: 100%;
+    }
+    button {
+      margin-right: 125px;
     }
     &_header {
       &-main {
@@ -251,5 +261,54 @@ html {
   }
   .arrow {
     transform: translateX(500%);
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .contact {
+    &_header {
+      height: 173px;
+      &-bot {
+        height: 100%;
+      }
+      &-main {
+        height: 100%;
+      }
+    }
+    &-name {
+      margin-top: 47px;
+      margin-left: 131px;
+    }
+    &-name1 {
+      margin-left: 191px;
+      margin-top: -5px;
+    }
+    &-item {
+      margin-left: 47px;
+    }
+    &_info {
+      &-author {
+        ul li {
+          width: auto;
+          margin-bottom: 17px;
+        }
+      }
+      padding-top: 20px;
+      padding-left: 30px;
+    }
+    &_form {
+      input,
+      textarea {
+        width: 100%;
+      }
+    }
+    &_footer {
+      img {
+        display: none;
+      }
+    }
+    button {
+      margin-right: 100px;
+    }
   }
 }

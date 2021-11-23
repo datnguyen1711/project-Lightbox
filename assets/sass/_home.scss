@@ -3,7 +3,6 @@ body {
   max-width: 1920px;
   line-height: 1;
   margin: 0 auto;
-  min-height: 100vh;
 }
 html {
   scroll-behavior: smooth;
@@ -11,10 +10,10 @@ html {
 .lightbox {
   &_header {
     width: 100%;
-    height: 265px;
+    height: 266px;
     &-main {
-      width: 71%;
-      height: 214px;
+      width: 71.45%;
+      height: 213px;
       margin: 0 auto;
       background-color: $brown;
       border-left: 1px solid #5e463c;
@@ -30,6 +29,13 @@ html {
       border-top: 1px solid #4a362e;
     }
   }
+  &-bubble {
+    top: 0;
+    right: 50;
+    transform: translateX(-42%);
+    position: absolute;
+    z-index: 1;
+  }
   &-logo {
     margin-top: -145px;
     margin-left: -40px;
@@ -42,48 +48,60 @@ html {
     display: flex;
     text-decoration: none;
     float: right;
-    margin-right: 70px;
+    margin-right: 102px;
   }
   &-item {
-    margin-top: 28px;
+    margin-top: 32px;
     margin-left: 87px;
     text-align: center;
+
     &_image {
-      width: 37px;
-      margin-bottom: 16px;
+      width: 33px;
+      margin-bottom: 12px;
+      z-index: 2;
     }
     p {
-      color: #c7b18d;
       font-size: 11px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 500;
+      color: #c7b18d;
+      text-transform: uppercase;
+      text-align: center;
+      text-decoration: none;
     }
   }
   &-name {
     margin-left: 170px;
-    margin-top: -160px;
+    margin-top: -177px;
     color: #ede8e4;
-    font-size: 55px;
+    font-size: 60px;
+    font-weight: 900;
+    display: block;
+    width: 124px;
+    height: 67px;
     font-family: "Duepuntozero";
   }
   &-name1 {
-    margin-left: 236px;
+    margin-left: 238px;
     color: #c7b18d;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 600;
+    margin-top: -10px;
+    font-family: "Duepuntozero";
   }
   &-content {
     display: flex;
     height: 93px;
   }
-  &-nameRight {
-    margin-left: 10px;
-    width: 45%;
-    margin-top: -160px;
-  }
+
   &-paragraph {
-    border-left: 2px solid #4a362e;
+    margin: -67px 235px 0 302px;
     padding-left: 20px;
-    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 17px;
     color: #a68a7d;
+    border-left: 1px solid #4f3b33;
     line-height: 1.3;
   }
   &_main {
@@ -92,7 +110,7 @@ html {
     margin-bottom: 100px;
   }
   &_container {
-    width: 71%;
+    width: 71.45%;
     margin: 0 auto;
     background-image: linear-gradient(#e6e2df, white);
     height: 100%;
@@ -100,23 +118,35 @@ html {
     border-right: 1px solid white;
   }
   &_info {
-    width: 63.9%;
+    width: 65.9%;
     height: 100%;
     margin-left: auto;
-    padding-top: 15px;
+    padding-top: 30px;
     padding-right: 15px;
   }
   &_plan {
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid #cec5c0;
+    border-bottom: 1px solid #cec5c0;
     &-quote {
-      margin-left: 20px;
-      width: 75%;
+      float: right;
+      margin-right: 10px;
+      margin-left: 60px;
+      width: 70%;
       background: #e6e2df;
       color: #7f6357;
       padding: 25px;
       font: italic 18px/27px georgia;
+      position: relative;
+      ::before {
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        right: 35px;
+        border-top: 25px solid #e3e3e3;
+        border-left: 30px solid #f1efed;
+        border-right: 5px solid #f1efed;
+      }
       p {
         font-size: 20px;
         margin-bottom: 20px;
@@ -128,7 +158,7 @@ html {
       font: bold normal 15px arial;
       color: #2f231e;
       float: right;
-      padding-right: 30px;
+      margin-right: 10px;
       padding-top: 35px;
 
       font-weight: bold;
@@ -142,34 +172,37 @@ html {
   }
   &-title {
     font-weight: 600;
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 35px;
+    margin-bottom: 25px;
+    font-family: "Duepuntozero";
     color: #2f231e;
   }
   &-information {
-    border-top: 2px solid #cfc6c0;
-    padding-top: 20px;
+    border-top: 1px solid #cfc6c0;
+    padding-top: 30px;
     padding-right: 20px;
   }
   &-list {
     img {
-      height: 27px;
+      height: 40px;
       margin-right: 15px;
     }
     display: flex;
     &_item {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       h2 {
         color: #836065;
-        font-weight: 300;
-        font-size: 25px;
-        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: 8px;
         font-family: "Duepuntozero";
       }
       p {
-        font-size: 15px;
+        width: 300px;
+        font-size: 14px;
         color: #645a56;
         line-height: 1.5;
+        font-family: Arial, Helvetica, sans-serif;
       }
     }
   }
@@ -184,6 +217,7 @@ html {
       font-style: italic;
       color: #4e4d4d;
       margin-top: 15px;
+      margin-right: 10px;
     }
     &-main {
       display: flex;
@@ -194,21 +228,24 @@ html {
     }
     &-title {
       margin-bottom: 0;
-      font-size: 30px;
+      font-size: 37px;
       color: #2f231e;
       font-weight: 600;
+      font-family: "Duepuntozero";
     }
     &-number {
       display: flex;
       gap: 8px;
+      margin-right: 10px;
     }
     &-image {
-      width: calc(100% - 20px);
-      padding: 11px;
+      width: 92%;
+      padding: 20px;
       border: 1px solid #d6cec9;
       background: white;
+      margin-right: 100px;
       img {
-        width: calc(100% - 10px);
+        width: 100%;
         display: block;
         margin: 0 auto;
         border: 1px solid rgb(206, 206, 206);
@@ -221,13 +258,13 @@ html {
     border-right: 1px solid #48362d;
     border-left: 1px solid #48362d;
     &-main {
-      width: 80%;
+      width: 71.45%;
       height: 100%;
       margin: 0 auto;
       display: flex;
     }
     &-left {
-      width: calc(100% - 500px);
+      width: calc(100% - 530px);
       height: 100%;
       background-color: $bold-brown;
       display: flex;
@@ -254,17 +291,11 @@ html {
     }
   }
 }
-.arrow {
-  width: 0;
-  height: 0;
-  line-height: 0;
-  border-top: 25px solid #e3e3e3;
-  border-left: 30px solid #f1efed;
-  border-right: 5px solid #f1efed;
-  position: absolute;
-  transform: translateX(500%);
-}
+
 @media only screen and (max-width: 1024px) {
+  .arrow {
+    display: none;
+  }
   .lightbox {
     &_container {
       width: calc(100% - 2px);
@@ -286,7 +317,6 @@ html {
       width: 100%;
       &-desc {
         width: 100%;
-        margin-right: 30px;
       }
     }
     &_main {
@@ -303,13 +333,17 @@ html {
       margin-left: 0;
     }
     &-logo {
-      width: 270px;
-      margin-top: -180px;
+      display: none;
+    }
+    &-nameLeft {
+      width: 100%;
     }
     &-name {
-      margin-top: -150px;
+      margin-top: 97px;
     }
     &-paragraph {
+      width: 300px;
+      margin: -81px 292px 0 304px;
     }
     &_container {
       width: calc(100% - 2px);
@@ -328,50 +362,14 @@ html {
     transform: translateX(500%);
   }
 }
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 375px) {
   .lightbox {
-    &_footer {
-      &-right {
-        width: 100%;
-        padding-right: 0;
-      }
-    }
-    &_recent {
-      margin-top: 70px;
-    }
-    &_plan {
-      display: block;
-    }
-    &-name1 {
-      margin-left: 225px;
-    }
-    &-content {
-      display: inline;
-    }
-    &-name {
-      margin-left: 163px;
-      margin-top: -160px;
-    }
-    &-nameRight {
-      margin-left: 81px;
-      width: 75%;
-      margin-top: 5px;
-    }
     &-logo {
-      width: 118px;
-      margin-top: 0;
-      margin-left: 10px;
-    }
-    &-item {
-      margin-top: 0;
-      margin-left: 40px;
-    }
-    &_navbar {
-      width: auto;
-      margin: 10px auto;
+      display: none;
     }
     &_header {
-      &-top {
+      &-main {
+        width: 100%;
       }
     }
   }
@@ -379,6 +377,9 @@ html {
 @media only screen and (max-width: 414px) {
   .lightbox {
     &_footer {
+      img {
+        display: none;
+      }
       &-right {
         width: 100%;
         padding-right: 0;
@@ -386,19 +387,37 @@ html {
     }
     &_recent {
       margin-top: 70px;
+      &-image {
+        width: 85%;
+      }
     }
     &_plan {
       display: block;
+      border-bottom: none;
     }
     &-name1 {
-      margin-left: 225px;
+      margin-left: 91px;
     }
     &-content {
       display: inline;
     }
+    &-item {
+      margin-left: 47px;
+    }
+    &-paragraph {
+      padding: 0;
+      border: none;
+      width: 200px;
+      font-size: 15px;
+      margin: -81px 292px 0 162px;
+    }
+    &_plan {
+      &-desc {
+        height: 400px;
+      }
+    }
     &-name {
-      margin-left: 163px;
-      margin-top: -160px;
+      margin-left: 26px;
     }
     &-nameRight {
       margin-left: 81px;
@@ -406,23 +425,102 @@ html {
       margin-top: 5px;
     }
     &-logo {
-      width: 118px;
-      margin-top: 0;
-      margin-left: 10px;
-    }
-    &-item {
-      margin-top: 0;
-      margin-left: 40px;
+      display: none;
     }
     &_navbar {
-      margin: 10px 10px;
+      margin: 10px auto;
     }
-    &_header {
-      &-top {
+    &-list {
+      &_item {
+        p {
+          width: 265px;
+        }
       }
     }
   }
   .arrow {
     display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .lightbox {
+    &_footer {
+      img {
+        display: none;
+      }
+      &-right {
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+    &_recent {
+      margin-top: 123px;
+      &-title {
+        margin-bottom: 10px;
+      }
+      &-main {
+        display: inline-block;
+      }
+      &-image {
+        width: 85%;
+      }
+    }
+    &_plan {
+      display: block;
+      border-bottom: none;
+    }
+    &-name1 {
+      margin-left: 91px;
+    }
+    &-content {
+      display: inline;
+    }
+    &-item {
+      margin-left: 33px;
+    }
+    &-paragraph {
+      width: 256px;
+      font-size: 15px;
+      margin: 18px 286px 0 33px;
+      text-align: center;
+    }
+    &_plan {
+      &-desc {
+        height: 400px;
+      }
+    }
+    &-name {
+      margin-left: 112px;
+      margin-bottom: 94px;
+    }
+    &-name1 {
+      margin-left: 180px;
+      margin-top: -103px;
+    }
+    &-nameRight {
+      margin-left: 81px;
+      width: 75%;
+      margin-top: 5px;
+    }
+    &-logo {
+      display: none;
+    }
+    &_navbar {
+      margin: 10px auto;
+    }
+    &-list {
+      &_item {
+        p {
+          width: 200px;
+        }
+      }
+    }
+    &_header {
+      height: 336px;
+      &-main {
+        width: auto;
+        height: 500px;
+      }
+    }
   }
 }
