@@ -541,7 +541,7 @@ html {
     width: 100%;
     margin-left: 0;
     flex-direction: column;
-    margin-bottom: 25%;
+    margin-bottom: 30%;
     padding-right: 0;
   }
   .info_list {
@@ -811,7 +811,7 @@ html {
   height: 33px;
   background-color: #cdc4be;
   float: right;
-  margin-right: 121px;
+  margin-right: 117px;
   cursor: pointer;
 }
 
