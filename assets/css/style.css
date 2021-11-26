@@ -215,7 +215,7 @@ html {
 .header-title p {
   font-size: 16px;
   color: #fae1b3;
-  margin-left: 73px;
+  margin-left: 59%;
   margin-top: -9px;
 }
 .header-desc {
@@ -519,6 +519,9 @@ html {
   .header-title {
     margin-left: 59%;
     margin-top: 40%;
+  }
+  .header-title p {
+    margin-left: 197%;
   }
   .header-desc {
     width: 91%;

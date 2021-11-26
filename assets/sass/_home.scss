@@ -71,7 +71,7 @@ html {
     p {
       font-size: 16px;
       color: #fae1b3;
-      margin-left: 73px;
+      margin-left: 59%;
       margin-top: -9px;
     }
   }
@@ -397,6 +397,9 @@ html {
     &-title {
       margin-left: 59%;
       margin-top: 40%;
+      p {
+        margin-left: 197%;
+      }
     }
     &-desc {
       width: 91%;
