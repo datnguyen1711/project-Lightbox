@@ -378,6 +378,83 @@ html {
     }
   }
 }
+@include mobile2 {
+  .header {
+    &-nav {
+      &_bar {
+        margin-left: 0;
+      }
+    }
+    &_main {
+      width: 100%;
+      height: 335px;
+      &-img {
+        display: inline-block;
+        img {
+          margin-top: 0;
+          margin-left: 0;
+          display: block;
+          width: 53%;
+        }
+      }
+    }
+    &-title {
+      border-right: none;
+      margin-left: -116px;
+      p {
+        margin-left: 61%;
+      }
+    }
+    &-desc {
+      display: block;
+      margin-top: 231px;
+      margin-left: -305px;
+      width: 97%;
+    }
+  }
+  .info {
+    &_main {
+      width: 100%;
+    }
+    &_desc {
+      width: 100%;
+      margin-left: 0;
+      flex-direction: column;
+      margin-bottom: 25%;
+      padding-right: 0;
+    }
+    &_list {
+      margin-left: 5%;
+    }
+    &_paragraph {
+      width: 80%;
+      margin: auto;
+    }
+    &-author {
+      padding-top: 65%;
+    }
+    &_recent {
+      margin-left: 5%;
+      margin-right: 5%;
+      &-image {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .footer {
+    &-main {
+      width: auto;
+    }
+    &-left {
+      display: none;
+    }
+    &-right {
+      width: auto;
+    }
+  }
+}
 @include iphoneX {
   .header {
     &_main {

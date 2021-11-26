@@ -1,10 +1,16 @@
-$mobile-width: 480px;
+$mobile-width: 377px;
+$mobile2-width: 416px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 $iphoneX-width: 321px;
 
 @mixin mobile {
   @media (max-width: #{$mobile-width - 1px}) {
+    @content;
+  }
+}
+@mixin mobile2 {
+  @media (max-width: #{$mobile2-width - 1px}) {
     @content;
   }
 }
