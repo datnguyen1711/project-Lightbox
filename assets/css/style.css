@@ -219,7 +219,7 @@ html {
   margin-top: -9px;
 }
 .header-desc {
-  width: 463px;
+  width: 453px;
   display: block;
   margin-top: 95px;
   margin-left: 30px;
@@ -241,17 +241,17 @@ html {
   border-right: solid 1px #ffff;
 }
 .info_desc {
-  width: 645px;
+  width: 635px;
   margin-left: 34.7%;
   display: flex;
-  padding-right: 40px;
+  padding-right: 1%;
 }
 .info_list {
   margin-top: 30px;
 }
 .info_list-title {
-  font-weight: 600;
-  font-size: 35px;
+  font-weight: 400;
+  font-size: 41px;
   margin-bottom: 25px;
   font-family: "Duepuntozero";
   color: #2f231e;
@@ -271,7 +271,7 @@ html {
 }
 .info_list-item h2 {
   color: #836065;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 30px;
   margin-bottom: 15px;
   font-family: "Duepuntozero";
@@ -336,7 +336,7 @@ html {
   font-size: 41px;
   line-height: 34px;
   color: #2f231e;
-  font-weight: 800;
+  font-weight: 400;
   font-family: "Duepuntozero";
 }
 .info_recent-number {
