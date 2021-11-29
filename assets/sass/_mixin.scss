@@ -10,7 +10,7 @@ $iphoneX-width: 321px;
   }
 }
 @mixin mobile2 {
-  @media (max-width: #{$mobile2-width - 1px}) {
+  @media (max-width: #{$tablet-width - 1px}) {
     @content;
   }
 }

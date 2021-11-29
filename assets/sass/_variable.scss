@@ -3,3 +3,13 @@ $light-brown: #3b2c25;
 $brown: #30241f;
 $text: #745459;
 $white: #e1dedb;
+
+@font-face {
+  font-family: "utm-duepuntozero";
+  src: url("https://candyfonts.com/wp-data/2018/10/26/11298/UTM Duepuntozero.ttf")
+      format("woff"),
+    url("https://candyfonts.com/wp-data/2018/10/26/11298/UTM Duepuntozero.ttf")
+      format("opentype"),
+    url("https://candyfonts.com/wp-data/2018/10/26/11298/UTM Duepuntozero.ttf")
+      format("truetype");
+}
